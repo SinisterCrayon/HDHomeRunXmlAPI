@@ -5,7 +5,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - HDHOMERUN_HOST=10.1.1.43
+      - HDHOMERUN_HOST=192.168.1.100
       - HDHOMERUN_EPG_DAYS=7
       - HDHOMERUN_EPG_HOURS=3
       - HDHOMERUN_DEBUG_MODE=on
