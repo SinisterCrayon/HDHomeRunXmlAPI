@@ -14,6 +14,10 @@ RUN addgroup --gid 1001 appuser && \
 COPY --chown=appuser:appuser hdhomerun_epg/ /code/hdhomerun_epg/
 COPY --chown=appuser:appuser app/ /code/app/
 
+# Create database folder for ethereal cache database
+RUN mkdir /code/database
+RUN chown appuser:appuser /code/database
+
 # Expose port
 EXPOSE 8000
 
