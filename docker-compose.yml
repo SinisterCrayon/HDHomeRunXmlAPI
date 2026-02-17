@@ -12,5 +12,5 @@ services:
       - HDHOMERUN_EPG_HOURS=3
       - HDHOMERUN_DEBUG_MODE=on
     volumes:
-      - ./epg_cache.db:/code/epg_cache.db
+      - ./database/epg_cache.db:/code/database/epg_cache.db
     restart: unless-stopped

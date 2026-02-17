@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     epg_hours: int = 2
     output_filename: str = "epg.xml"
     debug_mode: str = "on"
-    cache_db_path: str = "epg_cache.db"
+    cache_db_path: str = "database/epg_cache.db"
     cache_ttl_seconds: int = 86400  # 24 Hours
     cache_enabled: bool = True
 
